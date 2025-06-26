@@ -1,0 +1,8 @@
+/* Override fonts only when explicitly used */
+.font-ovo {
+  font-family: Ovo, serif !important;
+}
+
+.font-outfit {
+  font-family: Outfit, sans-serif !important;
+}
