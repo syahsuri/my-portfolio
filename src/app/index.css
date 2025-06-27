@@ -1,4 +1,11 @@
 /* Override fonts only when explicitly used */
+
+:root {
+  --color-lighthover: #fcf4ff;
+  --color-darkhover: #2a004a;
+  --color-darktheme: #11001f;
+}
+
 .font-ovo {
   font-family: Ovo, serif !important;
 }
