@@ -1,4 +1,4 @@
-import { assets, infoList, toolsData } from "@/assets/assets";
+import { assets, infoList, toolsData, skillsData } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 
@@ -36,16 +36,36 @@ const About = () => {
               >
                 <Image src={icon} alt={title} className="w-7 mt-3" />
                 <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
-                <p className="text-gray-600 text-sm">{description}</p>
+                {title === "Languages" ? (
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {skillsData.map((skill, i) => (
+                      <Image
+                        key={i}
+                        src={skill}
+                        alt={`${skill.src} icon`}
+                        className="w-8 h-8 object-contain"
+                        width={32}
+                        height={32}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-gray-600 text-sm whitespace-pre-line">
+                    {description}
+                  </p>
+                )}
               </li>
             ))}
           </ul>
           <h4 className="my-6 text-gray-700 font-ovo">Tools I Use</h4>
           <ul className="flex items-center gap-3 sm:gap-5">
             {toolsData.map((tool, index) => (
-                <li key={index} className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                    <Image src={tool} alt='' className="w-5 sm:w-7" />
-                </li>
+              <li
+                key={index}
+                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
+              >
+                <Image src={tool} alt="" className="w-5 sm:w-7" />
+              </li>
             ))}
           </ul>
         </div>

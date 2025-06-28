@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import user_image from './user-image.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
@@ -38,6 +39,12 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import github from './github.png';
 import linkedin from './linkedin.png';
 import instagram from './instagram.png';
+import html from './html.png';
+import css from './css.png';
+import js from './js.png';
+import php from './php.png';
+import laravel from './laravel.png';
+import physics from './physics.png';
 
 export const assets = {
     user_image,
@@ -80,6 +87,12 @@ export const assets = {
     github,
     linkedin,
     instagram,
+    html,
+    css,
+    js,
+    php,
+    laravel,
+    physics,
 };
 
 export const workData = [
@@ -106,16 +119,25 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web & Mobile App Development', description: 'Develop responsive websites and mobile applications using modern technologies, ensuring optimal performance, accessibility, and user experience across devices.', link: '' },
+    { icon: assets.web_icon, title: 'Web & Mobile App Development', description: 'Develop responsive websites and mobile applications using modern technologies, ensuring optimal performance, accessibility, and user experience across devices.', link: ''  },
     { icon: assets.mobile_icon, title: 'Software Development', description: 'Design and build tailored software solutions based on client requirements—whether its a business tool, workflow automation, or a complete web application.', link: '' },
     { icon: assets.ui_icon, title: 'API Development & System Integration', description: 'Create secure and scalable APIs, and integrate third-party services (e.g., payment gateways, cloud storage, social logins) into existing systems for seamless interoperability.', link: '' },
     { icon: assets.graphics_icon, title: ' Maintenance, Testing & Optimization', description: 'Offer continuous support, bug fixing, performance optimization, and testing services to ensure applications remain stable, secure, and up-to-date.', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: '' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'D-IV Informatics Engineering\nLhokseumawe State Polytechnic (2020–2024)\nGPA: 3.66 / 4.00' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+];
+
+export const skillsData: StaticImageData[] = [
+  assets.html, 
+  assets.css, 
+  assets.js, 
+  assets.php, 
+  assets.laravel, 
+  assets.physics
 ];
 
 export const toolsData = [
