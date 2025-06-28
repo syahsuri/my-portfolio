@@ -124,6 +124,6 @@ export const toolsData = [
 
 export const socialLinks = [
     { icon: assets.github, url: 'https://github.com/syahsuri' },
-    { icon: assets.linkedin, url: 'www.linkedin.com/in/syahsuryalam' },
+    { icon: assets.linkedin, url: 'https://www.linkedin.com/in/syahsuryalam' },
     { icon: assets.instagram, url: 'https://www.instagram.com/syuri_monocrome/' },
 ];
