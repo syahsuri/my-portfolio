@@ -43,7 +43,7 @@ import html from './html.png';
 import css from './css.png';
 import js from './js.png';
 import php from './php.png';
-import laravel from './laravel.png';
+import laravel from './Laravel.png';
 import physics from './physics.png';
 
 export const assets = {
