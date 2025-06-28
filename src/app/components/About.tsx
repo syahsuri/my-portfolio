@@ -37,16 +37,21 @@ const About = () => {
                 <Image src={icon} alt={title} className="w-7 mt-3" />
                 <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
                 {title === "Languages" ? (
-                  <div className="flex flex-wrap gap-2 mt-2">
+                  <div className="flex flex-wrap gap-3 mt-2">
+                    {" "}
+                    {/* Increased gap to 3 */}
                     {skillsData.map((skill, i) => (
-                      <Image
-                        key={i}
-                        src={skill}
-                        alt={`${skill.src} icon`}
-                        className="w-8 h-8 object-contain"
-                        width={32}
-                        height={32}
-                      />
+                      <div key={i} className="p-1.5 bg-gray-100 rounded-lg">
+                        {" "}
+                        {/* Wrapper with background and rounded corners */}
+                        <Image
+                          src={skill}
+                          alt={`${skill.src} icon`}
+                          className="w-8 h-8 object-contain rounded-md" // Added rounded-md here
+                          width={32}
+                          height={32}
+                        />
+                      </div>
                     ))}
                   </div>
                 ) : (
