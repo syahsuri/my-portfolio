@@ -35,6 +35,9 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import github from './github.png';
+import linkedin from './linkedin.png';
+import instagram from './instagram.png';
 
 export const assets = {
     user_image,
@@ -73,7 +76,10 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    github,
+    linkedin,
+    instagram,
 };
 
 export const workData = [
@@ -114,4 +120,10 @@ export const infoList = [
 
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+];
+
+export const socialLinks = [
+    { icon: assets.github, url: 'https://github.com/syahsuri' },
+    { icon: assets.linkedin, url: 'www.linkedin.com/in/syahsuryalam' },
+    { icon: assets.instagram, url: 'https://www.instagram.com/syuri_monocrome/' },
 ];
