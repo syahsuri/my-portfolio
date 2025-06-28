@@ -1,11 +1,41 @@
-/* Override fonts only when explicitly used */
+@import "tailwindcss";
 
+/* Override fonts only when explicitly used */
 :root {
   --color-lighthover: #fcf4ff;
   --color-darkhover: #2a004a;
   --color-darktheme: #11001f;
 }
 
+@layer utilities {
+  /* Custom hover background */
+  .hover\:bg-lighthover:hover {
+    background-color: var(--color-lighthover);
+  }
+
+  /* Custom shadows */
+  .shadow-black {
+    box-shadow: 4px 4px 0 #000;
+  }
+
+  .shadow-white {
+    box-shadow: 4px 4px 0 #fff;
+  }
+
+  .hover\:shadow-black:hover {
+    box-shadow: 4px 4px 0 #000;
+  }
+
+  .hover\:shadow-white:hover {
+    box-shadow: 4px 4px 0 #fff;
+  }
+
+  .grid-cols-auto {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Font utility classes */
 .font-ovo {
   font-family: Ovo, serif !important;
 }

@@ -100,10 +100,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web & Mobile App Development', description: 'Develop responsive websites and mobile applications using modern technologies, ensuring optimal performance, accessibility, and user experience across devices.', link: '' },
+    { icon: assets.mobile_icon, title: 'Software Development', description: 'Design and build tailored software solutions based on client requirements—whether its a business tool, workflow automation, or a complete web application.', link: '' },
+    { icon: assets.ui_icon, title: 'API Development & System Integration', description: 'Create secure and scalable APIs, and integrate third-party services (e.g., payment gateways, cloud storage, social logins) into existing systems for seamless interoperability.', link: '' },
+    { icon: assets.graphics_icon, title: ' Maintenance, Testing & Optimization', description: 'Offer continuous support, bug fixing, performance optimization, and testing services to ensure applications remain stable, secure, and up-to-date.', link: '' },
 ]
 
 export const infoList = [
