@@ -9,7 +9,7 @@ const About = () => {
       <h2 className="text-center text-5xl font-ovo">About Me</h2>
 
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-        <div className="w-64 sm:w-80 rounded-3xl max-w-none">
+        <div className="w-72 sm:w-96 rounded-3xl max-w-none">
           <Image
             src={assets.user_image}
             alt=""
@@ -31,23 +31,21 @@ const About = () => {
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {infoList.map(({ icon, title, description }, index) => (
               <li
-                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-black"
+                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-black max-h-60 overflow-y-auto"
                 key={index}
               >
                 <Image src={icon} alt={title} className="w-7 mt-3" />
                 <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
-                {title === "Languages" ? (
+                {title === "Skills" ? (
                   <div className="flex flex-wrap gap-3 mt-2">
                     {" "}
-                    {/* Increased gap to 3 */}
                     {skillsData.map((skill, i) => (
                       <div key={i} className="p-1.5 bg-gray-100 rounded-lg">
                         {" "}
-                        {/* Wrapper with background and rounded corners */}
                         <Image
                           src={skill}
                           alt={`${skill.src} icon`}
-                          className="w-8 h-8 object-contain rounded-md" // Added rounded-md here
+                          className="w-8 h-8 object-contain rounded-md" 
                           width={32}
                           height={32}
                         />
@@ -55,7 +53,7 @@ const About = () => {
                     ))}
                   </div>
                 ) : (
-                  <p className="text-gray-600 text-sm whitespace-pre-line">
+                  <p className="text-gray-600 text-sm whitespace-pre-line leading-relaxed">
                     {description}
                   </p>
                 )}
