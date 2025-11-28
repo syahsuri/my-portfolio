@@ -38,6 +38,21 @@ const Header = () => {
             join a team where I can tackle exciting projects and grow my skills.
           </p>
 
+          <div className="flex justify-center md:justify-start gap-6 mt-6 text-gray-800 dark:text-black-300">
+            <div className="text-center">
+              <p className="text-xl font-bold">+3</p>
+              <p className="text-xs opacity-70">Years Experience</p>
+            </div>
+            <div className="text-center">
+              <p className="text-xl font-bold">+20</p>
+              <p className="text-xs opacity-70">Projects</p>
+            </div>
+            <div className="text-center">
+              <p className="text-xl font-bold">+7</p>
+              <p className="text-xs opacity-70">Technologies</p>
+            </div>
+          </div>
+
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6">
             <a
               href="#contact"
@@ -86,7 +101,14 @@ const Header = () => {
           />
         </div>
       </div>
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-5 h-8 border-2 border-gray-400 dark:border-gray-600 rounded-full flex items-start justify-center">
+          <div className="w-1 h-2 bg-gray-500 dark:bg-gray-300 mt-1 rounded-full animate-ping"></div>
+        </div>
+      </div>
     </div>
+
+    
   );
 };
 
